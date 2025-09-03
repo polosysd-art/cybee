@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Product Management</h2>
+    <form id="productForm">
+      <input type="hidden" id="productId" />
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <input type="number" id="productPrice" placeholder="Price" required />
+      <button type="submit">Save Product</button>
+    </form>
+
+    <table id="productTable">
+      <thead>
+        <tr><th>Name</th><th>Price</th><th>Actions</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <a href="dashboard.html">← Back to Dashboard</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
